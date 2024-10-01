@@ -1,0 +1,56 @@
+
+.display{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+}
+
+.titre{
+    color: rgb(0, 127, 127);
+}
+
+.en-tete{
+    
+    
+    background-color: aqua;
+    font-size: xx-large;
+    
+    
+}
+
+.divbt{
+
+
+    display: flex;
+    justify-content: space-around;
+    justify-content: end;
+
+}
+
+.btentete{
+    
+    
+}
+
+
+
+
+
+
+
+
+.droite{
+    
+    background-color: blueviolet;
+    width: max-content;
+    font-size: x-large;
+    
+}
+
+.gauche{
+    background-color: chartreuse;
+    width: max-content;
+    font-size: x-large;
+}
