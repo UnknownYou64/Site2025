@@ -6,6 +6,16 @@
         <meta charset="utf-8">
         <title>Ma page</title>
         <link href="page1.css" rel="stylesheet">
+
+        <script>
+            function scrollToSection(sectionId) {
+                const section = document.getElementById(sectionId);
+                if (section) {
+                    section.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+            </script>
+            
     </head>
 
 
@@ -24,19 +34,16 @@
             
             <div class="radio-inputs">
                 <label class="radio">
-                    <input type="radio" name="radio" checked="" />
+                    <input type="radio" name="radio" onclick="scrollToSection('information')" />
                     <span class="name">Information</span>
                 </label>
                 <label class="radio">
-                    
-                    <input type="radio" name="radio"/>
+                    <input type="radio" name="radio" onclick="scrollToSection('date')" />
                     <span class="name">Date</span>
                 </label>
-
                 <label class="radio">
-                    <input type="radio" name="radio"/>
+                    <input type="radio" name="radio" onclick="scrollToSection('resultat')" />
                     <span class="name">Resultat</span>
-                    
                 </label>
             </div>
 
@@ -48,7 +55,7 @@
 
 
 
-        <div id="resultats" class="droite">
+        <div id="resultat" class="droite">
             contenue a droite
 
         </div>
