@@ -38,13 +38,11 @@
     display: flex;
     justify-content: center;
     justify-content: space-around;
-    
-    
     background-color: #70c489;
     box-sizing: border-box;
     font-size: 20px;
     width: 100%;
-    padding: 1rem 1rem 0 1rem;
+    padding: 0rem 3rem 0 1rem;
     
   }
   
@@ -60,7 +58,7 @@
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
     border: none;
-    padding: 0.5rem 0.8rem;
+    padding: 0.5rem 0.5rem;
     color: ;
     transition: all 0.15s ease-in-out;
     position: relative;
@@ -98,6 +96,8 @@
     
   }
 
+
+  
 
 
 
