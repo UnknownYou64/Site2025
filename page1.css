@@ -91,9 +91,6 @@ body {
   .radio-inputs .radio input:checked + .name::before {
     content: "";
     position: absolute;
-    width: 10px;
-    height: 10px;
-    background-color: #70c489;
     bottom: 0;
   }
   
@@ -110,20 +107,93 @@ body {
   
 
   
+.milieu{
+  width: 100%;
+  background-color: violet;
+  
+}
 
 
 
 
-.droite{
-    
+
+
+
+
+
+
+
+
+.gauche3,
+.gauche2,
+.gauche{
+    display: flex;
+    justify-content: space-around;
     background-color: blueviolet;
     width: 50%;
     font-size: x-large;
     
 }
 
-.gauche{
+
+
+
+.droite{
     background-color: chartreuse;
     width: 50%;
     font-size: x-large;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.gauche2{
+  display: flex;
+  justify-content: space-around;
+  background-color: blue;
+  width: 50%;
+  font-size: x-large;
+  
+}
+
+
+
+
+.droite2{
+  background-color: yellow;
+  width: 50%;
+  font-size: x-large;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+
+
+.gauche3{
+  display: flex;
+  justify-content: space-around;
+  background-color: firebrick;
+  width: 50%;
+  font-size: x-large;
+  
+}
+
+
+
+
+.droite3{
+  background-color: orchid;
+  width: 50%;
+  font-size: x-large;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.imgfoot{
+  width: 30%;
 }
