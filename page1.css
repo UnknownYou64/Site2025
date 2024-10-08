@@ -110,7 +110,17 @@ body {
 .milieu{
   width: 100%;
   background-color: violet;
+  display: flex;
+  align-items: center;
   
+  
+  
+}
+
+.milieu h2{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+  color: rgb(203, 54, 0);
 }
 
 
@@ -123,9 +133,6 @@ body {
 
 
 
-
-.gauche3,
-.gauche2,
 .gauche{
     display: flex;
     justify-content: space-around;
