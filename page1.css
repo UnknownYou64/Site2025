@@ -155,26 +155,28 @@ body {
 }
 
 
-.gauche2{
+.milieu2{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  
+
+
+
   background-color: blue;
-  width: 50%;
+  width: 100%;
   font-size: x-large;
+  
   
 }
 
-
-
-
-.droite2{
-  background-color: yellow;
-  width: 50%;
-  font-size: x-large;
+.equipe{
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
+
+
 
 
 
@@ -201,6 +203,86 @@ body {
 }
 
 
+.gauche4{
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(131, 11, 155);
+  width: 50%;
+  font-size: x-large;
+  
+}
+
+
+
+
+.droite4{
+  background-color: rgb(16, 144, 46);
+  width: 50%;
+  font-size: x-large;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+
 .imgfoot{
   width: 30%;
+}
+
+
+
+.card {
+  width: 45%;
+  background: rgb(44, 44, 44);
+  font-family: "Courier New", Courier, monospace;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  overflow: hidden;
+  margin: 1%;
+}
+
+.card__title {
+  color: white;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-bottom: 1px solid rgb(167, 159, 159);
+  font-size: 0.95rem;
+}
+
+.card__data {
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  border-right: 1px solid rgb(203, 203, 203);
+  border-left: 1px solid rgb(203, 203, 203);
+  border-bottom: 1px solid rgb(203, 203, 203);
+}
+
+.card__right {
+  width: 60%;
+  border-right: 1px solid rgb(203, 203, 203);
+}
+
+.card__left {
+  width: 40%;
+  text-align: end;
+}
+
+.item {
+  padding: 3px 0;
+  background-color: white;
+}
+
+.card__right .item {
+  padding-left: 0.8em;
+}
+
+.card__left .item {
+  padding-right: 0.8em;
+}
+
+.item:nth-child(even) {
+  background: rgb(234, 235, 234);
 }
