@@ -8,13 +8,42 @@
         <link href="page1.css" rel="stylesheet">
 
         <script>
+            //Fonction pour cliquer puis redirigement automatique sur la section cliquer
             function scrollToSection(sectionId) {
                 const section = document.getElementById(sectionId);
                 if (section) {
                     section.scrollIntoView({ behavior: 'smooth' });
                 }
             }
-            </script>
+
+
+
+            //Fonction pour changer en temps réel la navbar 
+            document.addEventListener('DOMContentLoaded', function () {
+            const sections = document.querySelectorAll('.milieu, .milieu1, .milieu2, .gauche3, .droite3, .gauche4, .droite4');
+            const radioButtons = document.querySelectorAll('.radio-inputs input[type="radio"]');
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const sectionId = entry.target.id;
+                        const matchingRadioButton = Array.from(radioButtons).find(radio => radio.onclick.toString().includes(sectionId));
+                        if (matchingRadioButton) {
+                            matchingRadioButton.checked = true;
+                        }
+                    }
+                });
+            }, { threshold: 0.6 });
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+                
+
+
+
+        </script>
 
 
 
@@ -51,12 +80,12 @@
                 <span class="name">Information</span>
             </label>
             <label class="radio">
-                <input type="radio" name="radio" onclick="scrollToSection('equipe')" />
-                <span class="name">Equipe</span>
-            </label>
-            <label class="radio">
                 <input type="radio" name="radio" onclick="scrollToSection('Règlement')" />
                 <span class="name">Règlement</span>
+            </label>
+            <label class="radio">
+                <input type="radio" name="radio" onclick="scrollToSection('equipe')" />
+                <span class="name">Equipe</span>
             </label>
             <label class="radio">
                 <input type="radio" name="radio" onclick="scrollToSection('date')" />
@@ -104,7 +133,7 @@
 
             </center>
             
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         </div>
 
 
@@ -119,40 +148,29 @@
 
 
 
-        <div id="Règlement" class="gauche">
-                <div>
-                    <p>
+        <div id="Règlement" class="milieu1">
+                <div><br><br><br>
+                    <p class="">
                         
-                        
-                        Les dispositifs pour le foot seront celles-ci: <br><br>
+                        <center>
+                        Les dispositifs pour le foot seront ceux-ci: <br><br>
                         - Les rendez vous seront au terrain de la Floride a Bayonne. <br><br>
-                        - La couleur blanc sera pour la plage situé la plus au sud <br><br>
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   Exemple : si c'est Sables d'or vs Cavalier <br><br>
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   Ce seras les Sables d'or qui seront en blanc <br><br>
-
-
+                        - La couleur blanc sera pour la plage situé la plus au sud. <br><br>
+                                
+                        - Aucune réclamation de scores ou de revanche de sera accepté ! <br><br>
+                        - Les victoires rapporteront 3 points, l'égalité sera de 1 point et 0 pour les perdants ! <br><br>
+                        - Les regles suivront celles des Fédération associé a leur sport.
+                        </center>
                     </p>
 
-
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                 </div>
+                
+                
         </div>
 
         
-        <div id="Règlement" class="droite">
-            <div>
-                    <p>
-                        
-                        
-                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                        reglement
-                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-                    </p>
-
-
-            </div>
         
-        </div>
 
 
 
